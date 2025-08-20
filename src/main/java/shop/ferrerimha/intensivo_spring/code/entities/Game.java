@@ -1,5 +1,4 @@
 package shop.ferrerimha.intensivo_spring.code.entities;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -22,13 +21,16 @@ public class Game {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String name;
+    private String title;
+    private Double score; 
     @Column(name = "game_year")
     private int year;
     private String genre;
-    private String platform;
-    private String imgUrlString;
+    private String platforms;
+    private String img_url;    
+    @Column(name = "short_description", columnDefinition= "TEXT")
     private String shortDescription;
+    @Column(name = "long_description", columnDefinition= "TEXT")
     private String longDescription;
 
 }
