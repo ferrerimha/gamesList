@@ -11,7 +11,7 @@
 	<groupId>shop.ferrerimha</groupId>
 	<artifactId>intensivo-spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 	<name>intensivo-spring</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
