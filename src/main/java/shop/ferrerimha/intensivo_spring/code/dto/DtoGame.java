@@ -1,9 +1,5 @@
 package shop.ferrerimha.intensivo_spring.code.dto;
-
-import java.util.Optional;
-
 import org.springframework.beans.BeanUtils;
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

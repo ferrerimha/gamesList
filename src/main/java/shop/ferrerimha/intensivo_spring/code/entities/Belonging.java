@@ -2,13 +2,14 @@ package shop.ferrerimha.intensivo_spring.code.entities;
 
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
-import lombok.AllArgsConstructor;
+import jakarta.persistence.Table;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
+@Table(name = "tb_belonging")
 @Getter
 @Setter
 @NoArgsConstructor
