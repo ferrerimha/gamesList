@@ -1,30 +1,27 @@
 package shop.ferrerimha.intensivo_spring.code.dto;
 
-import java.util.Optional;
-
-import org.springframework.beans.BeanUtils;
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import shop.ferrerimha.intensivo_spring.code.entities.Game;
 
+@NoArgsConstructor
 @Getter
 @Setter
-@NoArgsConstructor
-public class DtoGame {
+public class DtoGameMin {
 
     private long id;
     private String title;
     private int year;
     private String genre;
-    private String platforms;
-    private Double score;
-    private String imgUrl;
     private String shortDescription;
-    private String longDescription;
 
-    public DtoGame(Game game){
-        BeanUtils.copyProperties(game, this);
+    public DtoGameMin(Game game){
+        this.id = game.getId();
+        this.title = game.getTitle();
+        this.genre = game.getGenre();
+        this.year = game.getYear();
+        this.shortDescription = game.getShortDescription();
     }
+    
 }
